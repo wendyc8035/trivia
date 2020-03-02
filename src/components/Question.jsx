@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import components
 
-import firebase from 'clients/firebase.js';
+import {buildFirebase} from '../clients/firebase.js';
 
 class Question extends Component {
   constructor(props){
@@ -12,6 +12,7 @@ class Question extends Component {
     databaseRef.once("value").then(function(data) {
       const questions = data.val();
       // Do something with the questions
+      console.log(questions);
 
       this.state={
 
