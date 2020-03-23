@@ -16,7 +16,6 @@ class Question extends Component {
       // Do something with the questions
       console.log(questions);
       this.setState(
-
         {
           questions: questions,
           question: getRandomQuestion(questions),
